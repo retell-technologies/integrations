@@ -1,8 +1,7 @@
 # JavaScript SDK
 
-## Install the Retell player
+## **Installation**
 
----
 
 You can install Retell Player through NPM
 
@@ -19,13 +18,12 @@ Or, you can use CDN
 
 ## Initialize the Retell player
 
----
 
 To initialize Retell Player, use the following:
 
 ```jsx
 <script data-voiced="player">
-  Retell.init({ url: "..." })
+	Retell.init({ url: "..." })
 </script>
 ```
 
@@ -35,29 +33,15 @@ if you install player through NPM you should import the package
 import { Retell } from '@retell/player-js'
 ```
 
-## Player parameters
+### Player parameters
 
----
-
-`url` *string (optional)*
-
-Article URL. This is default set to `Current page URL`
-
-`widget` *string (optional)*
-
-Player theme. This is default set to `default`. *(Currently, it is the only theme)*
-
-`rate` *float (optional)*
-
-Player rate. This is default set to `1.0`
-
-`theme` *object (optional)* `DEPRECATED`
-
-Now you can customize your widget directly in Retell Console *<https://console.retell.cc>*
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| url | `String` | Current page URL | Article URL |
+| rate | `Number` | 1 | Player playback rate |
+| widget | `String` | default | Player widget |
 
 ## Player Callbacks
-
----
 
 You can run custom functions by registering Player callbacks:
 
@@ -65,7 +49,18 @@ You can run custom functions by registering Player callbacks:
 Retell.registerCallback(eventName, callback, options)
 ```
 
-**Examples:**
+### Events
+
+| Event | Description |
+| --- | --- |
+| opened | This event fires when the player is successfully initialized |
+| start | This event fires when the player start playing audio (first play) |
+| resume | This event fires on audio resume |
+| pause | This event fires on audio pause |
+| end | This event fires when the audio is complete playing |
+| progress | This event fires on audio playing progress multiples by 5. |
+
+### **Examples:**
 
 ```jsx
 Retell.registerCallback('opened', function(event)){
@@ -75,46 +70,8 @@ Retell.registerCallback('opened', function(event)){
 
 ```jsx
 Retell.registerCallback('progress', function(event){
-  console.log(event.data.progress);
-}, {
-  marks: [15, 25, 50, 75, 95],
+	if ([25, 50, 75, 100].includes(event.data.progress)) {
+	  console.log(event.data.progress);
+	}
 });
 ```
-
-## Events
-
----
-
-### opened
-
-This event fires when the player is successfully initialized
-
-### start
-
-This event fires when the player start playing audio *(first play)*
-
-### resume
-
-This event fires on audio resume
-
-### pause
-
-This event fires on audio pause
-
-### end
-
-This event fires when the audio is complete playing
-
-### progress
-
-This event fires on audio playing progress
-
-**Event data:**
-
-`progress` *number*
-
-**Options:**
-
-`marks` *number[]*
-
-The array of progress numbers, on which callback should be called
