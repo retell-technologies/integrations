@@ -1,0 +1,12 @@
+{
+  "name": "@retell/player-js",
+  "version": "2.1.0",
+  "license": "MIT",
+  "main": "dist/common.min.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && vite build"
+  }
+}

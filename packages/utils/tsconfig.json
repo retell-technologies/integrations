@@ -1,0 +1,18 @@
+{
+    "extends": "../../tsconfig.json",
+    "include": [
+        "types",
+        "createIFrame",
+        "dispatchPostMessage",
+        "validateOptions",
+        "transformEvent",
+        "getLastDOMElement",
+        "getDeviceType",
+        "isValidUrl",
+        "makeQuery",
+        "normalizeUrl",
+        "createUUID",
+        "debounce",
+        "formatDuration"
+    ]
+}

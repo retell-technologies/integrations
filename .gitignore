@@ -1,0 +1,25 @@
+# packages
+node_modules
+
+# editor
+.vscode
+.idea
+
+# yarn
+**/.yarn/cache
+**/.yarn/*state*
+
+# build
+dist
+playgrounds/vue/src/plugins/retell-player.js
+playgrounds/react/src/retell-player.js
+playgrounds/common/src/common.min.js
+
+# logs
+*.log
+
+# env
+.env
+
+# archives
+*.tgz

@@ -1,0 +1,20 @@
+{
+  "name": "@retell/utils",
+  "version": "2.1.0",
+  "license": "MIT",
+  "files": [
+    "createIFrame",
+    "dispatchPostMessage",
+    "validateOptions",
+    "transformEvent",
+    "getLastDOMElement",
+    "getDeviceType",
+    "isValidUrl",
+    "makeQuery",
+    "normalizeUrl",
+    "createUUID",
+    "debounce",
+    "formatDuration"
+  ],
+  "main": "./types/index.ts"
+}

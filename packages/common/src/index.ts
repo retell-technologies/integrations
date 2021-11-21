@@ -1,0 +1,1 @@
+export { init, registerCallback } from './main'
