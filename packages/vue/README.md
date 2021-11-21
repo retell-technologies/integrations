@@ -24,9 +24,9 @@ Vue.use(RetellPlayer)
 
 ```html
 <template>
-	<div>
-		<retell-player />
-	</div>
+ <div>
+  <retell-player />
+ </div>
 </template>
 ```
 
@@ -34,9 +34,9 @@ You can specify the `articleUrl` to create a player with the custom article at
 
 ```html
 <template>
-		<div>
-	    <retell-player articleUrl="ABSOLUTE_LINK_TO_THE_ARTICLE" />
-	</div>
+ <div>
+   <retell-player articleUrl="ABSOLUTE_LINK_TO_THE_ARTICLE" />
+ </div>
 </template>
 ```
 
@@ -44,9 +44,9 @@ You can specify the `articleUrl` to create a player with the custom article at
 
 ```html
 <template>
-    <client-only>
-        <retell-player />
-    </client-only>
+ <client-only>
+   <retell-player />
+ </client-only>
 </template>
 ```
 
@@ -73,26 +73,26 @@ You can specify the `articleUrl` to create a player with the custom article at
 
 ```html
 <template>
-	<retell-player
-	  @opened="onOpened"
-	  @progress="onProgress"
-	/>
+ <retell-player
+   @opened="onOpened"
+   @progress="onProgress"
+ />
 </template>
 ```
 
 ```jsx
 <script>
 export default {
-	methods: {
-		onOpened () {
-			console.log('Player opened')
-		},
-		onProgress (event) {
-			if ([25, 50, 75, 100].includes(event.data.progress)) {
-				console.log('Player progress:', event.data.progress)
-			}
-		}
-	}
+ methods: {
+  onOpened () {
+   console.log('Player opened')
+  },
+  onProgress (event) {
+   if ([25, 50, 75, 100].includes(event.data.progress)) {
+    console.log('Player progress:', event.data.progress)
+   }
+  }
+ }
 }
 </script>
 ```

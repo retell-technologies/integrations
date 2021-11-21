@@ -61,14 +61,14 @@ const Example = () => {
 
 ```jsx
 <RetellPlayer
-    articleUrl={url}
-    callbacks={{
-      onOpened(event) { console.log(event) },
-      onStart(event) { console.log(event) },
-      onResume(event) { console.log(event) },
-      onPause(event) { console.log(event) },
-      onProgress(event) { console.log(event) },
-      onEnd(event) { console.log(event) },
-    }}
-  />
+  articleUrl={url}
+  callbacks={{
+    onOpened(event) { console.log(event) },
+    onStart(event) { console.log(event) },
+    onResume(event) { console.log(event) },
+    onPause(event) { console.log(event) },
+    onProgress(event) { console.log(event) },
+    onEnd(event) { console.log(event) },
+  }}
+/>
 ```

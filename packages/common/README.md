@@ -2,7 +2,6 @@
 
 ## **Installation**
 
-
 You can install Retell Player through NPM
 
 ```bash
@@ -18,12 +17,11 @@ Or, you can use CDN
 
 ## Initialize the Retell player
 
-
 To initialize Retell Player, use the following:
 
-```jsx
+```html
 <script data-voiced="player">
-	Retell.init({ url: "..." })
+ Retell.init({ url: "..." })
 </script>
 ```
 
@@ -70,8 +68,8 @@ Retell.registerCallback('opened', function(event)){
 
 ```jsx
 Retell.registerCallback('progress', function(event){
-	if ([25, 50, 75, 100].includes(event.data.progress)) {
-	  console.log(event.data.progress);
-	}
+ if ([25, 50, 75, 100].includes(event.data.progress)) {
+   console.log(event.data.progress);
+ }
 });
 ```
