@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/retell-organization/integrations/compare/@retell/utils@2.2.0...@retell/utils@2.2.1) (2021-11-24)
+
+
+### Bug Fixes
+
+* move userOptions set to {} by default to validateOptions function ([3dda912](https://github.com/retell-organization/integrations/commit/3dda9121c6857225159df0cf5e0b7e523304c6ac))
+
+
+
+
+
 # 2.2.0 (2021-11-21)
 
 

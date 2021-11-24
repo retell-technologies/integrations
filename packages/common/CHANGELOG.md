@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.3](https://github.com/retell-organization/integrations/compare/@retell/player-js@2.2.2...@retell/player-js@2.2.3) (2021-11-24)
+
+
+### Bug Fixes
+
+* move userOptions set to {} by default to validateOptions function ([d4c0dae](https://github.com/retell-organization/integrations/commit/d4c0daedb13830fc07e17a40c5331e3ecd7ab0de))
+
+
+
+
+
 ## [2.2.2](https://github.com/retell-organization/integrations/compare/@retell/player-js@2.2.1...@retell/player-js@2.2.2) (2021-11-24)
 
 
