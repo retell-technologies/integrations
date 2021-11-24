@@ -4,6 +4,8 @@ import normalizeUrl from '../normalizeUrl'
 import type { WidgetUserOptions } from '../types'
 
 export default function validateOptions(userOptions: Partial<WidgetUserOptions>): WidgetUserOptions {
+  if (!userOptions) { userOptions = {} }
+
   const source = userOptions.source || getDeviceType()
   const type = userOptions.type || 'article'
   const widget = userOptions.widget || 'default'

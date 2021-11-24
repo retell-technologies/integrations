@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "lerna run build --stream",
-    "release": "yarn && FORCE_COLOR=1 lerna publish -m \"chore: release\""
+    "release": "yarn && yarn build && FORCE_COLOR=1 lerna publish -m \"chore: release\""
   },
   "devDependencies": {
     "@types/node": "^16.11.6",
