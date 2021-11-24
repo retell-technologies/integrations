@@ -103,7 +103,7 @@ export function registerCallback(event: CallbackType, cb: Callback['handler'], o
   }
 }
 
-export function init(userOptions: WidgetUserOptions = {} as WidgetUserOptions): void {
+export function init(userOptions: WidgetUserOptions): void {
   const scriptElement = getLastDOMElement('script[data-voiced=player]')
   if (!scriptElement) {
     throw new Error('Retell: There is no script tags with data-voiced attribute')
