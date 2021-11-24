@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.2](https://github.com/retell-organization/integrations/compare/@retell/player-js@2.2.1...@retell/player-js@2.2.2) (2021-11-24)
+
+
+### Bug Fixes
+
+* set userOptions to {} by default ([4cdc0f7](https://github.com/retell-organization/integrations/commit/4cdc0f7a079ba2088c2241cb663ff26cd1050d11))
+
+
+
+
+
 ## [2.2.1](https://github.com/retell-organization/integrations/compare/@retell/player-js@2.2.0...@retell/player-js@2.2.1) (2021-11-21)
 
 **Note:** Version bump only for package @retell/player-js
