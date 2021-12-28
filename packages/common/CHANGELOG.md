@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/retell-organization/integrations/compare/@retell/player-js@2.2.3...@retell/player-js@2.3.0) (2021-12-28)
+
+
+### Features
+
+* add Speechki alias for Retell ([23a845c](https://github.com/retell-organization/integrations/commit/23a845cee960a31cf49bc442f0b34df62279f002))
+
+
+
+
+
 ## [2.2.3](https://github.com/retell-organization/integrations/compare/@retell/player-js@2.2.2...@retell/player-js@2.2.3) (2021-11-24)
 
 
