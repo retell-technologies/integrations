@@ -1,4 +1,5 @@
 import { getLastDOMElement } from '@retell/utils/getLastDOMElement'
+import { dispatchPostMessage } from '@retell/utils/dispatchPostMessage'
 import createIFrame from '@retell/utils/createIFrame'
 import validateOptions from '@retell/utils/validateOptions'
 import transformEvent from '@retell/utils/transformEvent'
@@ -56,12 +57,22 @@ export function handlePostMessage(event: MessageEvent): void {
   switch (data.type) {
     case 'widgeterror':
       closeIframe()
+      if (window.parent && window.parent !== window) {
+        dispatchPostMessage({
+            type: 'RetellWidgetError',
+        });
+      }
       break
 
     case 'widgetready':
       openIframe(data.data.height)
       if (callbacks.opened && typeof callbacks.opened.handler === 'function') {
         callbacks.opened.handler(data)
+      }
+      if (window.parent && window.parent !== window) {
+        dispatchPostMessage({
+            type: 'RetellWidgetReady',
+        });
       }
       break
 
