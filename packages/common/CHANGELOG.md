@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/retell-organization/integrations/compare/@retell/player-js@2.3.0...@retell/player-js@2.4.0) (2021-12-28)
+
+
+### Features
+
+* add dispatchPostMessage for WidgetReady and WidgetError ([696f3b2](https://github.com/retell-organization/integrations/commit/696f3b231a07de704f207398d11299632f0d5396))
+
+
+
+
+
 # [2.3.0](https://github.com/retell-organization/integrations/compare/@retell/player-js@2.2.3...@retell/player-js@2.3.0) (2021-12-28)
 
 

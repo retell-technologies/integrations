@@ -1,6 +1,6 @@
 {
   "name": "@retell/player-js",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "license": "MIT",
   "main": "dist/common.min.js",
   "files": [
