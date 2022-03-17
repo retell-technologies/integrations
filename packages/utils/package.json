@@ -2,6 +2,7 @@
   "name": "@retell/utils",
   "version": "0.0.0",
   "license": "MIT",
+  "private": true,
   "files": [
     "src/index.ts",
     "types/index.d.ts"
