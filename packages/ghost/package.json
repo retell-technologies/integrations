@@ -1,11 +1,16 @@
 {
   "name": "@retell/ghost",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "license": "MIT",
   "files": [
     "dist"
   ],
   "scripts": {
     "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "@retell/utils": "*",
+    "typescript": "^4.6.2",
+    "vite": "^2.8.6"
   }
 }
