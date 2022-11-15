@@ -1,8 +1,7 @@
 import { validateOptions, createIFrame, getLastDOMElement }  from '@retell/utils'
 import type { PlayerOptions, PlayerEvent } from '@retell/utils/types'
 
-// const PLAYER_URL = "https://widget.retell.cc"
-const PLAYER_URL = "https://7aae7690.player-3lu.pages.dev"
+const PLAYER_URL = "https://widget.retell.cc"
 const callbacks = {} as any;
 
 function openIframe(id: string, height: number = 60): void {

@@ -10,7 +10,7 @@
       "npmClient": "npm"
     }
   },
-	"version": "independent",
+	"version": "independent", 
   "changelog": {
     "labels": {
       "feat": "New Feature",
