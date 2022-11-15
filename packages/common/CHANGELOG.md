@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.2](https://github.com/retell-technologies/integrations/compare/@retell/player-js@3.1.0...@retell/player-js@3.1.2) (2022-11-15)
+
+**Note:** Version bump only for package @retell/player-js
+
+
+
+
+
 # [3.1.0](https://github.com/retell-technologies/integrations/compare/@retell/player-js@2.4.0...@retell/player-js@3.1.0) (2022-03-17)
 
 
